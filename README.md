@@ -22,3 +22,4 @@ None
 # Specifics
 * input1.txt has the input format for question 1 of lab exam
 * input2.txt has the input format for question 2 of lab exam
+* The output for the TestFiles folder with input_test_files has been included in the ReadmeFiles folder
