@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int x, y;
+    printf("Enter first input\n");
+    scanf("%d",&x);
+    printf("Enter second input\n");
+    scanf("%d",&y);
+    printf("Entered : %d %d \n",x,y);
+    return 0;
+}
