@@ -1,13 +1,10 @@
-# LabGrader
+# LabGrader :
 Automation Scripts to compile and run student submitted code
-
-# Requirements
-None
 
 # System requirements :
 * Linux based environment needed. Few bash scripts commands will not work even on powershell.
 * Python 3.7 or above
-
+* C-compiler 
 # Process to use:
 * Clone the repository to local environment
 * Create an input file with specific syntax described below
@@ -19,7 +16,13 @@ None
 * Testcases need to be semicolon seperated
 * Refer the inputfiles included for reference
 
-# Specifics
+# Specifics :
 * input1.txt has the input format for question 1 of lab exam
 * input2.txt has the input format for question 2 of lab exam
 * The output for the TestFiles folder with input_test_files has been included in the ReadmeFiles folder
+
+# Demo :
+To run the testcases following command is run:
+```
+python3 autograder.py TestFiles input_test_files.txt
+```
