@@ -1,0 +1,19 @@
+------Errors for TestFiles/correct : ------
+######################################
+
+------Errors for TestFiles/incorrect : ------
+Segmentation fault
+Segmentation fault
+######################################
+
+------Errors for TestFiles/warning : ------
+TestFiles/warning.c: In function ‘main’:
+TestFiles/warning.c:3:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    3 |     printf("Does not work");
+      |     ^~~~~~
+TestFiles/warning.c:3:5: warning: incompatible implicit declaration of built-in function ‘printf’
+TestFiles/warning.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | int main(void)
+######################################
+

@@ -4,7 +4,7 @@ Automation Scripts to compile and run student submitted code
 # System requirements :
 * Linux based environment needed. Few bash scripts commands will not work even on powershell.
 * Python 3.7 or above
-* C-compiler 
+* GCC-compiler
 # Process to use:
 * Clone the repository to local environment
 * Create an input file with specific syntax described below
@@ -17,6 +17,7 @@ Automation Scripts to compile and run student submitted code
 * Refer the inputfiles included for reference
 
 # Specifics :
+* Input files for course included in folder CourseTestCases
 * input1.txt has the input format for question 1 of lab exam
 * input2.txt has the input format for question 2 of lab exam
 * The output for the TestFiles folder with input_test_files has been included in the ReadmeFiles folder
@@ -26,3 +27,12 @@ To run the testcases following command is run:
 ```
 python3 autograder.py TestFiles input_test_files.txt
 ```
+
+To run the testcases output filtering file run :
+```
+python3 output_filter.py input_test_files.txt output1.txt modified_output.txt
+```
+
+* Currently the testcode is an identity map hence same input provided
+* Syntax for desired output is same as input files
+* 

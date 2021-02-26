@@ -1,0 +1,42 @@
+TestFiles/correct
+
+######################################
+xxxxxxxxx Case 0 xxxxxxxxxx
+Enter first input
+Enter second input
+Entered : 5 4 
+
+######################################
+
+xxxxxxxxx Case 1 xxxxxxxxxx
+Enter first input
+Enter second input
+Entered : 4 5 
+
+######################################
+
+--------------------------------
+TestFiles/incorrect
+
+######################################
+xxxxxxxxx Case 0 xxxxxxxxxx
+
+######################################
+
+xxxxxxxxx Case 1 xxxxxxxxxx
+
+######################################
+
+--------------------------------
+TestFiles/warning
+
+######################################
+xxxxxxxxx Case 0 xxxxxxxxxx
+Does not work
+######################################
+
+xxxxxxxxx Case 1 xxxxxxxxxx
+Does not work
+######################################
+
+--------------------------------

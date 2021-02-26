@@ -11,6 +11,15 @@ def input_splitter(source_file):
                 files_created.append(f"inp_{i}.txt")
         return files_created
 
+def output_input(source_file):
+    with open(source_file,"r") as src_file:
+        text = src_file.read()
+        cases = text.split(";")
+        overall = []
+        for case in cases:
+            overall.append(case.split())
+        return overall
+
 def input_cleaner(directory = "."):
     for file in os.listdir(directory):
         if "inp_" in file:

@@ -1,0 +1,30 @@
+TestFiles/correct
+$$ Result CORRECTLY MATCHED $$
+Filtered Result : 5 4
+$$ Result CORRECTLY MATCHED $$
+Filtered Result : 4 5
+
+TestFiles/incorrect
+$$ Result NOT MATCHED $$
+Original Result : 
+xxxxxxxxx Case 0 xxxxxxxxxx
+
+$$ Result NOT MATCHED $$
+Original Result : 
+
+xxxxxxxxx Case 1 xxxxxxxxxx
+
+
+TestFiles/warning
+$$ Result NOT MATCHED $$
+Original Result : 
+xxxxxxxxx Case 0 xxxxxxxxxx
+Does not work
+$$ Result NOT MATCHED $$
+Original Result : 
+
+xxxxxxxxx Case 1 xxxxxxxxxx
+Does not work
+
+
+
