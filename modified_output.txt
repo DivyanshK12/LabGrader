@@ -1,28 +1,38 @@
 TestFiles/correct
 $$ Result CORRECTLY MATCHED $$
-Filtered Result : 5 4
+FILTERED RESULT : 5 4
+Enter second input
+Entered : 5 4
 $$ Result CORRECTLY MATCHED $$
-Filtered Result : 4 5
+FILTERED RESULT : 4 5
+Enter second input
+Entered : 4 5
+
+TestFiles/correct2
+$$ Result NOT MATCHED $$
+ORIGINAL RESULT :
+Entered : Randomness1111;5
+4
+$$ Result NOT MATCHED $$
+ORIGINAL RESULT :
+Entered : Randomness1111;4
+5
 
 TestFiles/incorrect
 $$ Result NOT MATCHED $$
-Original Result : 
+ORIGINAL RESULT :
 xxxxxxxxx Case 0 xxxxxxxxxx
-
 $$ Result NOT MATCHED $$
-Original Result : 
-
+ORIGINAL RESULT :
 xxxxxxxxx Case 1 xxxxxxxxxx
-
 
 TestFiles/warning
 $$ Result NOT MATCHED $$
-Original Result : 
+ORIGINAL RESULT :
 xxxxxxxxx Case 0 xxxxxxxxxx
 Does not work
 $$ Result NOT MATCHED $$
-Original Result : 
-
+ORIGINAL RESULT :
 xxxxxxxxx Case 1 xxxxxxxxxx
 Does not work
 

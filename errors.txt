@@ -1,6 +1,9 @@
 ------Errors for TestFiles/correct : ------
 ######################################
 
+------Errors for TestFiles/correct2 : ------
+######################################
+
 ------Errors for TestFiles/incorrect : ------
 Segmentation fault
 Segmentation fault

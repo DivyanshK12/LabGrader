@@ -19,7 +19,7 @@ def run_all_files(file_list, inp_file_names, op_name , er_name):
 
         os.system(f"echo '------Errors for {filename} : ------' >> {er_name}")
         with open(er_name, "ab") as f:
-            subprocess.run([f"gcc {file} -o {filename}","-lm"], stderr=f, shell=True, timeout=5)
+            subprocess.run([f"gcc {file} -o {filename}","-lm"], stderr=f, shell=True, timeout=10)
 
         os.system(f"echo '{filename}\n' >> {op_name} 2>> {er_name}")
         os.system(f"echo '######################################' >> {op_name}")
