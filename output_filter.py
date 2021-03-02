@@ -50,6 +50,7 @@ def main():
     if inp < 5:
         print("Please enter the arguements in the following format : \n(1)expected_output_file \n(2)output_file_from_autograder \n(3)filename_for_modified_output \n(4)number_of_lines_to_scan")
         print("python3 output_filter.py (1) (2) (3) (4)")
+        print("OR\n ./modify.sh After giving the necessary executable permissions")
     else :
         out = split_file(read_in(sys.argv[2]))
         run_all_cases(output_input(sys.argv[1]), out, sys.argv[3], int(sys.argv[4]))

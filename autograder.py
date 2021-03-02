@@ -4,8 +4,9 @@ import os
 import subprocess
 from input_generator import input_splitter, input_cleaner
 
-def list_files(dirname):
-    return os.listdir(dirname)
+def list_c_files(dirname):
+    files =  os.listdir(dirname)
+    return [ str(dirname+"/"+file) for file in files if ".c" in file.lower()]
 
 def run_all_files(file_list, inp_file_names, op_name , er_name):
     # Dirty code to start empty in input filename
@@ -33,7 +34,6 @@ def run_all_files(file_list, inp_file_names, op_name , er_name):
 
 
 def run_case(filename, inp, oup, err):
-    # os.system(f"./{filename} < {inp} >> {oup} 2>> {err}")
     inp_str = open(inp, 'rb')
     out = open(oup, 'ab')
     er = open(err, 'ab')
@@ -45,14 +45,21 @@ def run_case(filename, inp, oup, err):
     er.close()
 
 def do_work(dirname, inp_name, outputfile = "output1.txt", errorfile = "errors.txt"):
-    files = list_files(dirname)
-    c_files = [ str(dirname+"/"+file) for file in files if ".c" in file.lower()]
+    c_files = list_c_files(dirname)
     file_names = input_splitter(inp_name)
     run_all_files(c_files,file_names, outputfile, errorfile)
     input_cleaner(".")
     print("Complete")
 
+def main():
+    if len(sys.argv) <3:
+        print("Run the program with the following arguements:\n(1)Path of required directory\n(2)Input filename")
+        print("Example:\npython3 autograder.py TestFiles input_test_files.txt")
+        print("OR\n./run.sh After giving the necessary executable permissions")
+    else:
+        dirname = sys.argv[1]
+        input_name = sys.argv[2]
+        do_work(dirname, input_name)
+
 if __name__ == "__main__":
-    dirname = sys.argv[1]
-    input_name = sys.argv[2]
-    do_work(dirname, input_name)
+    main()
