@@ -7,6 +7,6 @@ int main(void)
     scanf("%d",&x);
     printf("Enter second input\n");
     scanf("%d",&y);
-    printf("Entered : Randomness1111;%d\n%d\n",x,y);
+    printf("Entered : Randomness1111;%d,%d\n",x,y);
     return 0;
 }
